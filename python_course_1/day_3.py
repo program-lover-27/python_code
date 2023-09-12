@@ -89,38 +89,7 @@ print(1 in data_arr)
 print(1 not in data_arr)
 
 # ---------------------------------------------------------------
-# Operator Overloading
-
-text_1 = "Hello"
-text_2 = " World"
-
-text_3 = text_1 + text_2
-print(text_3)
-
-# ---------------------------------------------------------------
-# Take input from the user in Python.
-
-number_1 = input("Enter number 1 ")
-print(number_1)
-print(type(number_1))
-
-number_2 = input("Enter number 2 ")
-number_3 = int(number_2)
-print(number_3)
-print(type(number_3))
-
-
-# Logical Operators (and, or, not)
-
-# True and True = True
-# True and False = False
-# False and True = False
-# False and False = False
-
-# True or True = True
-# True or False = True
-# False or True = True
-# False or False = False
+# Boolean values are either True (1) or False(0)
 
 # Logical Operators (and, or, not)
 
@@ -142,6 +111,7 @@ print(type(number_3))
 # False or True = True
 # False or False = False
 
+# ------------------------
 # or means addition (+)
 # 1 + 1 = 1
 # 1 + 0 = 1
