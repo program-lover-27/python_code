@@ -1,6 +1,22 @@
 Follow this link
 https://www.django-rest-framework.org/tutorial/quickstart/
 
-What is virtual environment
+What is virtual environment?
 virtualenv is used to manage Python packages for different projects. Using virtualenv allows you to avoid installing Python packages globally which could break system tools or other projects.
+
+-----------------------------------------------
+Create project
+django-admin startproject curd_project
+
+What is asgi python django file?
+(Async vs Sync)
+Enter ASGI, the Asynchronous Server Gateway Interface. Like WSGI, ASGI describes a common interface between a Python web application and the web server. Unlike WSGI, ASGI allows multiple, asynchronous events per application. Plus, ASGI supports both sync and async apps.
+
+Create app
+django-admin startapp quickstart
+
+-----------------------------------------------
+Migrate database
+python manage.py migrate
+
 
