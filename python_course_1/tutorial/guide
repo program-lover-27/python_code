@@ -17,6 +17,26 @@ django-admin startapp quickstart
 
 -----------------------------------------------
 Migrate database
-python manage.py migrate
+python3 manage.py migrate
 
+Create new super user
+python3 manage.py createsuperuser
+
+mplanet.ganesh
+ganesh123
+
+------------------------------------------------
+path is used for routing URLs to the appropriate view functions within a Django application using the URL dispatcher.
+
+
+
+
+
+
+
+
+
+
+https://www.geeksforgeeks.org/serializers-django-rest-framework/
+Serializers in Django REST Framework are responsible for converting objects into data types understandable by javascript and front-end frameworks. Serializers also provide deserialization, allowing parsed data to be converted back into complex types, after first validating the incoming data.
 
