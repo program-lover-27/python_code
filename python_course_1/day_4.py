@@ -6,6 +6,21 @@ text_2 = " World"
 text_3 = text_1 + text_2
 print(text_3)
 
+number_1 = 2
+number_2 = 3
+
+number_3 = number_1 + number_2
+print(number_3)
+
+text_1 = "Hello"
+text_2 = "World"
+
+text_3 = text_1 + text_2
+print(text_3)
+
+text = "a" * 5
+print(text)
+
 # ---------------------------------------------------------------
 # Take input from the user in Python.
 
@@ -144,5 +159,3 @@ number_1 = 10
 number_2 = 20
 
 print(number_1 > number_2)
-
-
