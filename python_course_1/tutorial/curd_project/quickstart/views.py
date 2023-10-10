@@ -66,9 +66,29 @@ def main(request):
 #     }
 #     return HttpResponse(template.render(context, request))
 
+# def testing(request):
+#     template = loader.get_template('template.html')
+#     context = {
+#         'colors': ['Red', 'Orange', 'Blue'],
+#     }
+#     return HttpResponse(template.render(context, request))
+
+# def testing(request):
+#     mydata = Member.objects.all()
+#     template = loader.get_template('template.html')
+#     context = {
+#         'mymembers': mydata,
+#     }
+#     return HttpResponse(template.render(context, request))
+
+
+from django.db.models import Q
+
+
 def testing(request):
+    mydata = Member.objects.filter(Q(firstname='Emil') | Q(firstname='Tobias')).values()
     template = loader.get_template('template.html')
     context = {
-        'colors': ['Red', 'Orange', 'Blue'],
+        'mymembers': mydata,
     }
     return HttpResponse(template.render(context, request))

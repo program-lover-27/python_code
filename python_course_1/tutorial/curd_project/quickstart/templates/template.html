@@ -1,5 +1,11 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html>
+
+<!--<link rel="stylesheet" href="{% static 'myfirst.css' %}">-->
+<link rel="stylesheet" href="{% static 'myglobal.css' %}">
+
 <body>
 
 <!--{% for x in colors %}-->
@@ -81,13 +87,37 @@
 <!--  <h1>Welcome ladies and gentlemen</h1>-->
 <!--{% endcomment %}-->
 
-<h1>Welcome Everyone</h1>
-{% comment "this was the original welcome message" %}
-<h1>Welcome ladies and gentlemen</h1>
-{% endcomment %}
+<!--<h1>Welcome Everyone</h1>-->
+<!--{% comment "this was the original welcome message" %}-->
+<!--<h1>Welcome ladies and gentlemen</h1>-->
+<!--{% endcomment %}-->
 
-<h1>Welcome{# Everyone#}</h1>
+<!--<h1>Welcome{# Everyone#}</h1>-->
 
+<!--{% include 'header.html' with me='Python Programming' sponsor='PROGRAM LOVER' %}-->
+
+<!--<h1>Hello</h1>-->
+
+<!--<p>Dear friends.</p>-->
+
+<!--{% include 'footer.html' %}-->
+
+
+
+<table border='1'>
+    <tr>
+        <th>ID</th>
+        <th>Firstname</th>
+        <th>Lastname</th>
+    </tr>
+    {% for x in mymembers %}
+    <tr>
+        <td>{{ x.id }}</td>
+        <td>{{ x.firstname }}</td>
+        <td>{{ x.lastname }}</td>
+    </tr>
+    {% endfor %}
+</table>
 
 </body>
 </html>
